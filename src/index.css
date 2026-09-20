@@ -1,0 +1,63 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-cream: #faf7f2;
+  --color-cream-dark: #f0ebe3;
+  --color-plum: #3d2b45;
+  --color-plum-light: #5a4563;
+  --color-teal: #1e4d4a;
+  --color-teal-dark: #163a38;
+  --color-sage: #8fa88a;
+  --color-blush: #e8d5d0;
+  --color-charcoal: #2a2a2a;
+  --color-muted: #5c5c5c;
+  --font-serif: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-sans: 'DM Sans', system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    @apply bg-cream text-charcoal font-sans antialiased;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-teal;
+  }
+}
+
+@layer utilities {
+  .section-padding {
+    @apply px-5 py-16 md:px-8 md:py-24 lg:px-12;
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(1.25rem);
+    transition:
+      opacity 0.6s ease,
+      transform 0.6s ease;
+  }
+
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+  }
+}
