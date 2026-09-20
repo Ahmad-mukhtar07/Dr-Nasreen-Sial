@@ -19,7 +19,9 @@ export const siteMeta = {
   title: 'Dr. Nasreen A. Sial | Obstetrics & Gynaecology',
   description:
     'Dr. Nasreen A. Sial — experienced doctor in obstetrics and gynaecology. Compassionate women\'s health care. Based in South Australia. Enquire via WhatsApp or email.',
-  profileImagePath: '/images/dr-sial-profile.jpg',
+  logoPath: '/images/logo.png',
+  logoAlt: 'Dr. Nasreen A. Sial logo',
+  profileImagePath: '/images/dr-sial-profile.png',
   profileImageAlt: 'Portrait of Dr. Nasreen A. Sial',
 };
 

@@ -36,11 +36,12 @@ In `src/content/siteContent.ts`:
 
 ## Profile photo
 
-Replace the file (keep the same path):
+Replace the files (keep the same paths):
 
-`public/images/dr-sial-profile.jpg`
+- **Portrait:** `public/images/dr-sial-profile.png`
+- **Logo / favicon:** `public/images/logo.png`
 
-Recommended: portrait orientation, at least 800×960 px, optimised JPEG. Alt text is set via `siteMeta.profileImageAlt` in `siteContent.ts`.
+Alt text and paths are set in `siteMeta` inside `siteContent.ts`.
 
 ## Contact form (Formspree)
 

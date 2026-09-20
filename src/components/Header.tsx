@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { contact, hero, navLinks } from '../content/siteContent';
+import { contact, hero, navLinks, siteMeta } from '../content/siteContent';
 import { WhatsAppIcon } from './icons/ContactIcons';
 import { ButtonLink } from './ui/ButtonLink';
 
@@ -34,9 +34,18 @@ export function Header() {
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 md:px-8 lg:px-12">
         <a
           href="#top"
-          className="font-serif text-lg text-plum shrink-0 leading-tight md:text-xl"
+          className="flex items-center gap-2.5 sm:gap-3 shrink-0 min-w-0 group"
         >
-          Dr. Nasreen A. Sial
+          <img
+            src={siteMeta.logoPath}
+            alt=""
+            width={40}
+            height={40}
+            className="h-9 w-9 sm:h-10 sm:w-10 rounded-[0.65rem] object-contain shadow-sm ring-1 ring-plum/10 transition-shadow group-hover:shadow-md"
+          />
+          <span className="font-serif text-base sm:text-lg text-plum leading-tight md:text-xl truncate">
+            Dr. Nasreen A. Sial
+          </span>
         </a>
 
         <nav className="hidden lg:flex items-center gap-1 xl:gap-2" aria-label="Primary">
