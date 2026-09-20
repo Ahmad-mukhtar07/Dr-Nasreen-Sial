@@ -1,3 +1,4 @@
+import { SHOW_CONTACT_SECTION } from './content/siteContent';
 import { About } from './components/About';
 import { AreasOfCare } from './components/AreasOfCare';
 import { Contact } from './components/Contact';
@@ -32,7 +33,7 @@ function App() {
         <Education />
         <Training />
         <Research />
-        <Contact />
+        {SHOW_CONTACT_SECTION ? <Contact /> : null}
       </main>
       <Footer />
       <FloatingWhatsApp />

@@ -32,6 +32,7 @@ In `src/content/siteContent.ts`:
 
 - **`PROFESSIONAL_TITLE`** — Shown in the hero, footer, and JSON-LD (default: `Doctor · Obstetrics & Gynaecology`). Do not use restricted specialist titles for Australian advertising unless appropriately registered and cleared.
 - **`AHPRA_REGISTRATION_NO`** — Leave as an empty string `''` to hide. Set to the registration number when you want it shown in the footer.
+- **`SHOW_CONTACT_SECTION`** — Set to `true` to show the “Get in touch” section and Contact nav link (default: `false`).
 
 ## Profile photo
 

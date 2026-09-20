@@ -1,5 +1,6 @@
 import { contact, hero, PROFESSIONAL_TITLE, siteMeta } from '../content/siteContent';
 import { useScrollReveal } from '../hooks/useScrollReveal';
+import { EmailIcon, WhatsAppIcon } from './icons/ContactIcons';
 import { ButtonLink } from './ui/ButtonLink';
 
 export function Hero() {
@@ -38,9 +39,11 @@ export function Hero() {
           </p>
           <div className="mt-8 flex flex-col sm:flex-row flex-wrap gap-3">
             <ButtonLink href={contact.whatsappLink} variant="whatsapp" external>
+              <WhatsAppIcon className="h-5 w-5 shrink-0" />
               {hero.ctaWhatsApp}
             </ButtonLink>
             <ButtonLink href={mailto} variant="secondary">
+              <EmailIcon className="h-5 w-5 shrink-0" />
               {hero.ctaEmail}
             </ButtonLink>
           </div>

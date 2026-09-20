@@ -17,7 +17,7 @@ export function Contact() {
         />
 
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-14">
-          <div className="space-y-6">
+          <div className="flex flex-col gap-4 sm:items-start">
             <ButtonLink
               href={contact.whatsappLink}
               variant="whatsapp"
@@ -33,7 +33,7 @@ export function Contact() {
             >
               Email {contact.email}
             </ButtonLink>
-            <dl className="text-sm text-muted space-y-2 pt-4">
+            <dl className="text-sm text-muted space-y-2 pt-2">
               <div>
                 <dt className="font-medium text-plum">Location</dt>
                 <dd>{contact.location}</dd>

@@ -12,6 +12,9 @@ export const AHPRA_REGISTRATION_NO = '';
 /** Formspree form ID (e.g. "xyzabc"). Leave empty to use mailto fallback only. */
 export const FORMSPREE_FORM_ID = '';
 
+/** Set to true to show the Get in touch section and Contact nav link. */
+export const SHOW_CONTACT_SECTION = false;
+
 export const siteMeta = {
   title: 'Dr. Nasreen A. Sial | Obstetrics & Gynaecology',
   description:
@@ -25,7 +28,7 @@ export const contact = {
   whatsappLink:
     'https://wa.me/61414777264?text=Hello%20Dr.%20Sial%2C%20I%27d%20like%20to%20enquire%20about%20a%20consultation.',
   email: 'drnasreensial@gmail.com',
-  location: 'South Australia',
+  location: '📍 - South Australia 🇦🇺',
 };
 
 export const hero = {
@@ -267,7 +270,7 @@ export const contactSection = {
 export const footerDisclaimer =
   'This website provides general information only and does not constitute medical advice. It is not for emergencies. In an emergency, call 000.';
 
-export const navLinks = [
+const allNavLinks = [
   { label: 'About', href: '#about' },
   { label: 'Areas of Care', href: '#areas-of-care' },
   { label: 'Experience', href: '#experience' },
@@ -275,4 +278,8 @@ export const navLinks = [
   { label: 'Training', href: '#training' },
   { label: 'Research', href: '#research' },
   { label: 'Contact', href: '#contact' },
-];
+] as const;
+
+export const navLinks = SHOW_CONTACT_SECTION
+  ? [...allNavLinks]
+  : allNavLinks.filter((link) => link.href !== '#contact');
