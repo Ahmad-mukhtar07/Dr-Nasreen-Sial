@@ -47,7 +47,7 @@ export function Hero() {
               {hero.ctaEmail}
             </ButtonLink>
           </div>
-          <p className="mt-6 text-sm text-muted">{contact.location}</p>
+          <p className="mt-6 text-sm text-muted text-center md:text-left">{contact.location}</p>
         </div>
 
         <div ref={imageRef} className="reveal order-1 lg:order-2 flex justify-center lg:justify-end">

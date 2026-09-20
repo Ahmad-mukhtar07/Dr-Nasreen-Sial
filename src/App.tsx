@@ -37,8 +37,6 @@ function App() {
       </main>
       <Footer />
       <FloatingWhatsApp />
-      {/* Spacer so floating button does not cover footer links on small screens */}
-      <div className="md:hidden h-20" aria-hidden />
     </>
   );
 }
