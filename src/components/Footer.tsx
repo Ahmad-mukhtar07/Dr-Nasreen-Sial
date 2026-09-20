@@ -5,7 +5,9 @@ import {
   hero,
   navLinks,
   PROFESSIONAL_TITLE,
+  siteMeta,
 } from '../content/siteContent';
+import { EmailIcon, WhatsAppIcon } from './icons/ContactIcons';
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -15,10 +17,23 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-5 py-12 md:px-8 lg:px-12">
         <div className="grid gap-10 md:grid-cols-3">
           <div>
-            <p className="font-serif text-xl">{hero.name}</p>
-            <p className="mt-1 text-cream/80 text-sm">{PROFESSIONAL_TITLE}</p>
+            <div className="flex items-center gap-3">
+              <img
+                src={siteMeta.logoPath}
+                alt=""
+                width={44}
+                height={44}
+                className="h-11 w-11 shrink-0 rounded-xl object-contain border-2 border-cream/35 bg-cream/5 p-0.5"
+              />
+              <div>
+                <p className="font-serif text-xl leading-tight">{hero.name}</p>
+                <p className="mt-1 text-cream/80 text-sm">{PROFESSIONAL_TITLE}</p>
+              </div>
+            </div>
             {AHPRA_REGISTRATION_NO ? (
-              <p className="mt-2 text-cream/70 text-xs">AHPRA Registration No. {AHPRA_REGISTRATION_NO}</p>
+              <p className="mt-3 text-cream/70 text-xs pl-[3.25rem]">
+                AHPRA Registration No. {AHPRA_REGISTRATION_NO}
+              </p>
             ) : null}
           </div>
 
@@ -35,15 +50,25 @@ export function Footer() {
             </ul>
           </nav>
 
-          <div className="text-sm text-cream/75 space-y-2">
+          <div className="text-sm text-cream/75 space-y-3">
             <p>
-              <a href={contact.whatsappLink} className="hover:text-white" rel="noopener noreferrer" target="_blank">
-                WhatsApp: {contact.whatsappNumber}
+              <a
+                href={contact.whatsappLink}
+                className="inline-flex items-center gap-2 hover:text-white transition-colors"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <WhatsAppIcon className="h-4 w-4 shrink-0 text-cream/90" />
+                <span>{contact.whatsappNumber}</span>
               </a>
             </p>
             <p>
-              <a href={`mailto:${contact.email}`} className="hover:text-white">
-                {contact.email}
+              <a
+                href={`mailto:${contact.email}`}
+                className="inline-flex items-center gap-2 hover:text-white transition-colors break-all"
+              >
+                <EmailIcon className="h-4 w-4 shrink-0 text-cream/90" />
+                <span>{contact.email}</span>
               </a>
             </p>
             <p>{contact.location}</p>

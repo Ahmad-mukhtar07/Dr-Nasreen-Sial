@@ -30,7 +30,7 @@ export const contact = {
   whatsappLink:
     'https://wa.me/61414777264?text=Hello%20Dr.%20Sial%2C%20I%27d%20like%20to%20enquire%20about%20a%20consultation.',
   email: 'drnasreensial@gmail.com',
-  location: '📍 - South Australia 🇦🇺',
+  location: '🇦🇺 South Australia',
 };
 
 export const hero = {
