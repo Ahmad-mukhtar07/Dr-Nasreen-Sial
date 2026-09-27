@@ -41,10 +41,10 @@ export function Header() {
             alt=""
             width={120}
             height={44}
-            className="h-9 sm:h-10 w-auto max-w-[7.5rem] sm:max-w-[8.5rem] rounded-lg object-contain object-left"
+            className="h-9 sm:h-10 w-auto max-w-[7.5rem] sm:max-w-[8.5rem] rounded-lg object-contain object-left border border-sage/40 bg-white/90 p-0.5 shadow-sm"
           />
           <span className="font-serif text-base sm:text-lg text-plum leading-tight md:text-xl truncate">
-            Dr. Nasreen A. Sial
+            {siteMeta.clinicName}
           </span>
         </a>
 

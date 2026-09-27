@@ -40,6 +40,7 @@ Replace the files (keep the same paths):
 
 - **Portrait:** `public/images/dr-sial-profile.png`
 - **Logo / favicon:** `public/images/logo.png`
+- **Tab icon:** replace `public/images/favicon-source.png`, then run `node scripts/generate-favicons.mjs`
 
 Alt text and paths are set in `siteMeta` inside `siteContent.ts`.
 
