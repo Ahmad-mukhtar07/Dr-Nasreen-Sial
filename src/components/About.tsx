@@ -1,5 +1,6 @@
 import { about, siteMeta } from '../content/siteContent';
 import { useScrollReveal } from '../hooks/useScrollReveal';
+import { InlineText } from './ui/InlineText';
 import { SectionHeading } from './ui/SectionHeading';
 
 export function About() {
@@ -12,7 +13,9 @@ export function About() {
         <div className="grid gap-10 lg:grid-cols-5 lg:gap-14">
           <div className="lg:col-span-3 space-y-5 text-muted text-lg leading-relaxed">
             {about.paragraphs.map((p) => (
-              <p key={p.slice(0, 40)}>{p}</p>
+              <p key={p.slice(0, 40)}>
+                <InlineText text={p} />
+              </p>
             ))}
             <p className="text-charcoal text-base pt-2">
               <span className="font-medium text-plum">Beyond medicine:</span>{' '}

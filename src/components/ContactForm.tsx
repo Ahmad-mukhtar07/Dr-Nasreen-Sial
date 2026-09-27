@@ -75,7 +75,7 @@ export function ContactForm() {
   if (state === 'success') {
     return (
       <div
-        className="rounded-2xl bg-teal/10 border border-teal/20 p-6 text-charcoal"
+        className="rounded-2xl bg-sage/10 border border-sage/25 p-6 text-charcoal"
         role="status"
       >
         <p className="font-medium text-plum">Thank you — your message has been sent.</p>
@@ -84,7 +84,7 @@ export function ContactForm() {
         </p>
         <button
           type="button"
-          className="mt-4 text-sm text-teal font-medium hover:underline"
+          className="mt-4 text-sm text-sage font-medium hover:underline"
           onClick={() => setState('idle')}
         >
           Send another message
@@ -98,7 +98,7 @@ export function ContactForm() {
       {!formspreeConfigured ? (
         <p className="text-sm text-muted rounded-lg bg-cream-dark p-3 border border-plum/10">
           Online form delivery is not configured yet. Submitting will open your email app, or use{' '}
-          <a href={contact.whatsappLink} className="text-teal underline">
+          <a href={contact.whatsappLink} className="text-sage underline">
             WhatsApp
           </a>{' '}
           for a faster reply.
@@ -121,7 +121,7 @@ export function ContactForm() {
 
       <div>
         <label htmlFor="name" className="block text-sm font-medium text-plum mb-1">
-          Name <span className="text-teal">*</span>
+          Name <span className="text-blush">*</span>
         </label>
         <input
           id="name"
@@ -235,7 +235,7 @@ export function ContactForm() {
       <button
         type="submit"
         disabled={state === 'submitting'}
-        className="w-full sm:w-auto rounded-full bg-teal text-white px-6 py-3 font-medium hover:bg-teal-dark disabled:opacity-60 transition-colors"
+        className="w-full sm:w-auto rounded-full bg-blush text-white px-6 py-3 font-medium hover:bg-blush-dark disabled:opacity-60 transition-colors"
       >
         {state === 'submitting'
           ? 'Sending…'

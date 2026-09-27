@@ -22,9 +22,9 @@ export function AreasOfCare() {
           {areasOfCare.items.map((item) => (
             <li
               key={item.title}
-              className="rounded-2xl bg-white p-5 shadow-sm shadow-plum/5 border border-plum/5 hover:border-sage/40 transition-colors"
+              className="rounded-2xl bg-white p-5 shadow-sm shadow-charcoal/5 border border-charcoal/5 hover:border-blush/40 transition-colors"
             >
-              <div className="mb-3 inline-flex rounded-xl bg-teal/10 p-2.5 text-teal">
+              <div className="mb-3 inline-flex rounded-xl bg-blush/15 p-2.5 text-blush">
                 <AreaIcon name={item.icon as AreaIconName} className="h-6 w-6" />
               </div>
               <h3 className="font-serif text-lg text-plum leading-snug">{item.title}</h3>

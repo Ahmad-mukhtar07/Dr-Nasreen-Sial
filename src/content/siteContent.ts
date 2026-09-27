@@ -20,7 +20,7 @@ export const siteMeta = {
   description:
     'Dr. Nasreen A. Sial — experienced doctor in obstetrics and gynaecology. Compassionate women\'s health care. Based in South Australia. Enquire via WhatsApp or email.',
   logoPath: '/images/logo.png',
-  logoAlt: 'Dr. Nasreen A. Sial logo',
+  logoAlt: 'OBGYN Sial Clinic logo',
   profileImagePath: '/images/dr-sial-profile.png',
   profileImageAlt: 'Portrait of Dr. Nasreen A. Sial',
 };
@@ -51,7 +51,7 @@ export const highlights = [
 export const about = {
   paragraphs: [
     'Dr. Nasreen A. Sial is a doctor with extensive clinical, surgical and teaching experience in obstetrics and gynaecology across Pakistan and Saudi Arabia. She completed her Fellowship in Obstetrics & Gynaecology with the College of Physicians and Surgeons Pakistan in 2007 and has served as Senior Registrar, Assistant Professor, Consultant and Senior Specialist, performing approximately 2,000 surgeries, including complex and high-risk cases.',
-    'Alongside her clinical work, Dr. Sial has taught medical students, including bedside teaching and lectures, presented monthly statistics and led perinatal meetings. She is the first author of the book \'Learn CTG\' and has contributed to published research. She is now based in Australia and has passed AMC Part 1, and is preparing for the AMC Clinical Examination.',
+    'Alongside her clinical work, Dr. Sial has taught medical students, including bedside teaching and lectures, presented monthly statistics and led perinatal meetings. She is the first author of the book \'Learn CTG\' and has contributed to published research. She is now based in Australia and has passed AMC<sub>1</sub>, and is preparing for the AMC Clinical Examination.',
   ],
   beyondMedicine: 'Debating · Poetry · Reading',
 };
@@ -195,8 +195,8 @@ export const clinicalSkills = [
 
 export const education = [
   {
-    title: 'AMC Part 1',
-    detail: 'Passed. Clinical Examination: in preparation (Australian Medical Council)',
+    title: 'AMC<sub>1</sub>',
+    detail: 'Passed. Now proceeding to the Clinical Examination at the Australian Medical Council',
   },
   {
     title: 'Six Sigma Black Belt, Silver Certification',
@@ -213,15 +213,15 @@ export const education = [
 ];
 
 export const cpdCourses = [
-  { date: 'Jun 2021 (5 weeks)', title: 'Clinical exam preparation, ARIMGSAS, Australia' },
+  { date: 'Jun 2021 (5 wk)', title: 'Clinical exam preparation, ARIMGSAS, Australia' },
   { date: 'Sept 2018', title: 'Birth Masterclass Workshop, RANZCOG, Australia' },
   { date: 'Jul 2018', title: 'Advanced Life Support in Obstetrics (ALSO), Adelaide, Australia' },
   {
-    date: 'Jun 2018 (1 week)',
+    date: 'Jun 2018 (1 wk)',
     title: 'Advanced Gynaecological Surgery, SWEC, St George Hospital, Sydney, Australia',
   },
   {
-    date: 'May 2018 (1 week)',
+    date: 'May 2018 (1 wk)',
     title: 'Fellow in Minimal Access Surgery, World Laparoscopic Hospital, Dubai',
   },
   { date: 'Jan 2017', title: 'Customised Sonography Training (theory and practice)' },

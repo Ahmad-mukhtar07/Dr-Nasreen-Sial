@@ -10,7 +10,7 @@ export function Highlights() {
         <ul className="grid grid-cols-2 gap-6 md:grid-cols-4 md:gap-8">
           {highlights.map((item) => (
             <li key={item.label} className="text-center md:text-left">
-              <p className="font-serif text-2xl md:text-3xl text-teal">{item.value}</p>
+              <p className="font-serif text-2xl md:text-3xl text-blush">{item.value}</p>
               <p className="mt-1 text-sm text-muted leading-snug">{item.label}</p>
             </li>
           ))}

@@ -13,17 +13,17 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-plum/10 bg-plum text-cream">
+    <footer className="border-t border-charcoal/10 bg-charcoal text-cream">
       <div className="mx-auto max-w-6xl px-5 pt-12 pb-[calc(5.5rem+env(safe-area-inset-bottom))] md:px-8 md:py-12 lg:px-12 md:pb-12">
         <div className="grid gap-10 md:grid-cols-3">
           <div>
-            <div className="flex items-center gap-3">
+            <div className="flex flex-col sm:flex-row sm:items-center gap-3">
               <img
                 src={siteMeta.logoPath}
                 alt=""
-                width={44}
-                height={44}
-                className="h-11 w-11 shrink-0 rounded-xl object-contain border-2 border-cream/35 bg-cream/5 p-0.5"
+                width={140}
+                height={56}
+                className="h-12 w-auto max-w-[9rem] shrink-0 rounded-lg object-contain border border-cream/30 bg-cream/95 p-1.5"
               />
               <div>
                 <p className="font-serif text-xl leading-tight">{hero.name}</p>
@@ -31,7 +31,7 @@ export function Footer() {
               </div>
             </div>
             {AHPRA_REGISTRATION_NO ? (
-              <p className="mt-3 text-cream/70 text-xs pl-[3.25rem]">
+              <p className="mt-3 text-cream/70 text-xs sm:pl-[9.5rem]">
                 AHPRA Registration No. {AHPRA_REGISTRATION_NO}
               </p>
             ) : null}

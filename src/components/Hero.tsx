@@ -32,7 +32,7 @@ export function Hero() {
           >
             {hero.name}
           </h1>
-          <p className="mt-3 text-teal font-medium text-lg md:text-xl">{PROFESSIONAL_TITLE}</p>
+          <p className="mt-3 text-sage font-medium text-lg md:text-xl">{PROFESSIONAL_TITLE}</p>
           <p className="mt-4 text-muted text-base md:text-lg leading-relaxed">{hero.credentials}</p>
           <p className="mt-4 text-charcoal text-lg md:text-xl font-medium leading-snug">
             {hero.tagline}

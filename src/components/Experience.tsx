@@ -16,11 +16,11 @@ export function Experience() {
           subtitle="Clinical leadership and surgical practice across Pakistan and Saudi Arabia."
         />
 
-        <ol className="relative border-l-2 border-teal/25 ml-3 md:ml-4 space-y-10">
+        <ol className="relative border-l-2 border-sage/35 ml-3 md:ml-4 space-y-10">
           {experience.map((entry) => (
             <li key={`${entry.role}-${entry.period}`} className="relative pl-8 md:pl-10">
               <span
-                className="absolute -left-[9px] top-1.5 h-4 w-4 rounded-full border-2 border-teal bg-cream"
+                className="absolute -left-[9px] top-1.5 h-4 w-4 rounded-full border-2 border-sage bg-cream"
                 aria-hidden
               />
               <div className="rounded-2xl bg-white p-6 shadow-sm border border-plum/5">

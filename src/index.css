@@ -1,16 +1,22 @@
 @import 'tailwindcss';
 
 @theme {
-  --color-cream: #faf7f2;
-  --color-cream-dark: #f0ebe3;
-  --color-plum: #3d2b45;
-  --color-plum-light: #5a4563;
-  --color-teal: #1e4d4a;
-  --color-teal-dark: #163a38;
-  --color-sage: #8fa88a;
-  --color-blush: #e8d5d0;
-  --color-charcoal: #2a2a2a;
-  --color-muted: #5c5c5c;
+  /* Clinic brand palette */
+  --color-cream: #fbf7f2;
+  --color-cream-dark: #f2ebe4;
+  --color-charcoal: #2e2c30;
+  --color-muted: #5c585e;
+  --color-blush: #c28b8f;
+  --color-blush-dark: #a97478;
+  --color-sage: #6d7b74;
+  --color-sage-dark: #5a6660;
+  /* Semantic aliases (used across components) */
+  --color-plum: #2e2c30;
+  --color-plum-light: #4a474c;
+  --color-teal: #6d7b74;
+  --color-teal-dark: #5a6660;
+  --color-rose: #c28b8f;
+  --color-rose-dark: #a97478;
   --font-serif: 'Fraunces', Georgia, 'Times New Roman', serif;
   --font-sans: 'DM Sans', system-ui, sans-serif;
 }
@@ -30,8 +36,12 @@
     @apply bg-cream text-charcoal font-sans antialiased;
   }
 
+  sub {
+    @apply text-[0.62em] text-muted font-normal align-baseline;
+  }
+
   :focus-visible {
-    @apply outline-2 outline-offset-2 outline-teal;
+    @apply outline-2 outline-offset-2 outline-sage;
   }
 }
 
