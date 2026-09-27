@@ -35,6 +35,14 @@ export const contact = {
   location: '🇦🇺 South Australia',
 };
 
+/**
+ * Hero colour mood (logo palette: blush, sage, charcoal, cream):
+ * - `classic` — blush + cream default; soft pink glow, sage accent blob (default)
+ * - `warm` — stronger blush / pink-cream wash
+ * - `sage` — calmer sage-green + cream, less pink
+ */
+export const HERO_THEME = 'classic' as 'classic' | 'warm' | 'sage';
+
 export const hero = {
   name: 'Dr. Nasreen A. Sial',
   credentials: 'MBBS · Fellowship in Obstetrics & Gynaecology (College of Physicians and Surgeons Pakistan)',

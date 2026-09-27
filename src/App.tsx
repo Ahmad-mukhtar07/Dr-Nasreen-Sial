@@ -27,8 +27,8 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <Services />
         <Highlights />
+        <Services />
         <About />
         <Experience />
         <ClinicalSkills />
