@@ -1,6 +1,7 @@
 import { SHOW_CONTACT_SECTION } from './content/siteContent';
 import { About } from './components/About';
-import { AreasOfCare } from './components/AreasOfCare';
+import { ClinicalSkills } from './components/ClinicalSkills';
+import { Services } from './components/Services';
 import { Contact } from './components/Contact';
 import { Education } from './components/Education';
 import { Experience } from './components/Experience';
@@ -18,7 +19,7 @@ function App() {
     <>
       <SiteMeta />
       <a
-        href="#about"
+        href="#services"
         className="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:m-4 focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:text-plum"
       >
         Skip to content
@@ -26,10 +27,11 @@ function App() {
       <Header />
       <main>
         <Hero />
+        <Services />
         <Highlights />
         <About />
-        <AreasOfCare />
         <Experience />
+        <ClinicalSkills />
         <Education />
         <Training />
         <Research />

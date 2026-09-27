@@ -1,10 +1,9 @@
-import { clinicalSkills, experience } from '../content/siteContent';
+import { experience } from '../content/siteContent';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 import { SectionHeading } from './ui/SectionHeading';
 
 export function Experience() {
   const ref = useScrollReveal<HTMLDivElement>();
-  const skillsRef = useScrollReveal<HTMLDivElement>();
 
   return (
     <section id="experience" className="section-padding scroll-mt-24" aria-labelledby="experience-heading">
@@ -38,20 +37,6 @@ export function Experience() {
             </li>
           ))}
         </ol>
-
-        <div ref={skillsRef} className="reveal mt-16 md:mt-20">
-          <h3 className="font-serif text-2xl text-plum mb-6">Clinical &amp; procedural skills</h3>
-          <ul className="flex flex-wrap gap-2">
-            {clinicalSkills.map((skill) => (
-              <li
-                key={skill}
-                className="rounded-full bg-cream-dark border border-plum/10 px-4 py-2 text-sm text-charcoal"
-              >
-                {skill}
-              </li>
-            ))}
-          </ul>
-        </div>
       </div>
     </section>
   );

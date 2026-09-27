@@ -56,57 +56,128 @@ export const about = {
   beyondMedicine: 'Debating · Poetry · Reading',
 };
 
-export const areasOfCare = {
-  heading: 'Areas of Care',
-  intro: 'Patient-focused support across common women\'s health concerns.',
-  items: [
+export type ServiceCategory = {
+  title: string;
+  description: string;
+  icon:
+    | 'menstrual'
+    | 'hormone'
+    | 'vaginal'
+    | 'fertility'
+    | 'contraception'
+    | 'pregnancy'
+    | 'menopause'
+    | 'general';
+  visibleTags: string[];
+  hiddenItems?: string[];
+};
+
+export const servicesSection = {
+  heading: 'How I can help',
+  subline:
+    'Confidential, judgment-free consultations for women\'s health at every stage of life.',
+  reassurance:
+    'Not sure where your concern fits? Message me directly and I\'ll point you in the right direction.',
+  onlineBanner: {
+    heading: 'Prefer to consult from home?',
+    body: 'Confidential online consultations are available for women who want accessible medical advice from the privacy of home.',
+    cta: 'Message on WhatsApp',
+  },
+  categories: [
     {
-      title: 'Abnormal Uterine Bleeding',
+      title: 'Menstrual Health',
       description:
-        'Assessment and management of heavy, prolonged, irregular or unexpected bleeding.',
-      icon: 'droplet',
+        'Support for period problems at any age — from irregular cycles to heavy or painful bleeding.',
+      icon: 'menstrual',
+      visibleTags: [
+        'Irregular or delayed periods',
+        'Painful periods & heavy bleeding',
+        'Premenstrual symptoms',
+        'Abnormal vaginal bleeding',
+      ],
     },
     {
-      title: 'Perimenopause & Menopause Management',
+      title: 'PCOS & Hormonal Health',
+      description: 'Evaluation and long-term management of PCOS and related hormonal imbalances.',
+      icon: 'hormone',
+      visibleTags: [
+        'PCOS diagnosis & management',
+        'Hormonal irregularities',
+        'Acne & excess hair growth',
+      ],
+      hiddenItems: [
+        'Weight-related concerns linked to PCOS',
+        'Menstrual irregularities related to PCOS',
+      ],
+    },
+    {
+      title: 'Vaginal & Reproductive Health',
+      description: 'Assessment of vaginal and pelvic symptoms, treated with discretion and care.',
+      icon: 'vaginal',
+      visibleTags: [
+        'Discharge, itching & irritation',
+        'Recurrent vaginal infections',
+        'Pelvic or vaginal discomfort',
+      ],
+      hiddenItems: ['Sexual & reproductive health concerns'],
+    },
+    {
+      title: 'Fertility & Preconception Care',
       description:
-        'Support through hormonal changes, symptom relief and long-term health.',
-      icon: 'sun',
+        'Guidance for individuals and couples trying to understand or improve their fertility.',
+      icon: 'fertility',
+      visibleTags: [
+        'Fertility-related concerns',
+        'Preconception counselling',
+        'Planning for pregnancy',
+      ],
+      hiddenItems: ['Evaluation of menstrual & ovulatory concerns'],
     },
     {
-      title: 'Hormone Replacement Therapy (HRT) Management',
-      description: 'Individualised assessment and review of HRT options.',
-      icon: 'heart-pulse',
+      title: 'Contraception & Family Planning',
+      description: 'Personalised advice to help you choose the contraception that suits your life.',
+      icon: 'contraception',
+      visibleTags: [
+        'Contraceptive counselling',
+        'Choosing a method',
+        'Family planning guidance',
+      ],
+      hiddenItems: ['Emergency contraception advice'],
     },
     {
-      title: 'Polycystic Ovarian Disease (PCOS)',
+      title: 'Pregnancy & Antenatal Guidance',
+      description: 'Guidance through early pregnancy and routine antenatal care.',
+      icon: 'pregnancy',
+      visibleTags: [
+        'Pre-pregnancy counselling',
+        'Early pregnancy concerns',
+        'Antenatal guidance',
+      ],
+      hiddenItems: ['Pregnancy symptoms requiring medical assessment'],
+    },
+    {
+      title: 'Menopause & Midlife Health',
       description:
-        'Assessment and management of irregular cycles and hormonal symptoms.',
-      icon: 'circle',
+        'Support through perimenopause and menopause, and the symptoms that come with them.',
+      icon: 'menopause',
+      visibleTags: [
+        'Perimenopause',
+        'Menopause symptom management',
+        'Hormone-related concerns',
+      ],
     },
     {
-      title: 'Post-Menopausal Bleeding',
-      description: 'Prompt evaluation of any bleeding after menopause.',
-      icon: 'alert',
+      title: 'General Gynaecological Care',
+      description: 'Assessment of broader gynaecological concerns and review of your test results.',
+      icon: 'general',
+      visibleTags: [
+        'Pelvic pain',
+        'Ovarian & uterine concerns',
+        'Review of gynaecological reports',
+      ],
+      hiddenItems: ['Preventive women\'s health counselling'],
     },
-    {
-      title: 'Contraception',
-      description: 'Personalised counselling on contraceptive options.',
-      icon: 'shield',
-    },
-    {
-      title: 'Atrophic Vaginitis',
-      description:
-        'Management of dryness, discomfort and related symptoms after menopause.',
-      icon: 'leaf',
-    },
-    {
-      title: 'Pelvic Pain Management',
-      description: 'Assessment and management of acute and chronic pelvic pain.',
-      icon: 'activity',
-    },
-  ],
-  footnote:
-    'Dr. Sial also has extensive obstetric and gynaecological surgical experience. See Experience below.',
+  ] satisfies ServiceCategory[],
 };
 
 export type ExperienceEntry = {
@@ -273,8 +344,8 @@ export const footerDisclaimer =
   'This website provides general information only and does not constitute medical advice. It is not for emergencies. In an emergency, call 000.';
 
 const allNavLinks = [
+  { label: 'Services', href: '#services' },
   { label: 'About', href: '#about' },
-  { label: 'Areas of Care', href: '#areas-of-care' },
   { label: 'Experience', href: '#experience' },
   { label: 'Education', href: '#education' },
   { label: 'Training', href: '#training' },
