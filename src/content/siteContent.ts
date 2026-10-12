@@ -280,8 +280,8 @@ export const education = [
     detail: 'Passed. Now proceeding to the Clinical Examination at the Australian Medical Council',
   },
   {
-    title: 'Six Sigma Black Belt, Silver Certification',
-    detail: 'Pyzdek Institute, Arizona, USA (online course accredited by IASSC) · May 2016 – Jan 2017',
+    title: 'Fellow in Minimal Access Surgery',
+    detail: 'World Laparoscopic Hospital, Dubai · May 2018',
   },
   {
     title: 'Fellowship in Obstetrics & Gynaecology',
