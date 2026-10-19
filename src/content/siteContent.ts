@@ -31,7 +31,7 @@ export const contact = {
   whatsappNumber: '+61 414 777 264',
   whatsappLink:
     'https://wa.me/61414777264?text=Hello%20Dr.%20Sial%2C%20I%27d%20like%20to%20enquire%20about%20a%20consultation.',
-  email: 'drnasreensial@gmail.com',
+  email: 'drnasreenasial@gmail.com',
   location: '🇦🇺 South Australia',
 };
 
